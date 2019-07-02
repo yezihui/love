@@ -1,0 +1,36 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: love
+
+wechat:
+  server:
+    token: yjxandyhh
+    encodingAesKey: g5ZWUZYTx783Sne1BC8BPjZHqbnPtOgjkDDL3UmbqAL
+  account:
+    appSecret: 9864deae4f55636d4343224942879bad
+    id: wxee3d72ed603d8028
+  api:
+    accessToken: https://api.weixin.qq.com/cgi-bin/token
+    userInfo: https://api.weixin.qq.com/cgi-bin/user/info
+  config:
+    delay: 3600000
+
+juhe:
+  api:
+    simpleWeather: http://apis.juhe.cn/simpleWeather/query
+  key:
+    simpleWeather: dac91f08fc075cc36290d3c4932d35ed
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+
+datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/love?characterEncoding=UTF-8
+  username: root
+  password: root
